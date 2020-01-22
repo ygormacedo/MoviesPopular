@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:background="@color/background">
+
+        <ImageView
+            android:id="@+id/imageMovie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars[2]"
+            android:contentDescription="@string/image_movie" />
+
+        <TextView
+            android:id="@+id/tittle_movie_detail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/bebas_regular"
+            android:textColor="@color/text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageMovie"
+            app:layout_constraintTop_toTopOf="@+id/imageMovie"
+            tools:text="Move Title Here"
+            tools:targetApi="jelly_bean" />
+
+        <TextView
+            android:id="@+id/description_movie_detail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="12sp"
+            android:fontFamily="@font/bebas_regular"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="@+id/tittle_movie_detail"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tittle_movie_detail"
+            app:layout_constraintTop_toBottomOf="@+id/tittle_movie_detail"
+            tools:text="Durante uma viagem ao Himalaia, um grupo de pessoas humildes encontra Everest, um Yeti, popularmente conhecido por sua altura extraordinária e por viver escondido entre as incríveis paisagens do sul da Ásia. Agora, os viajantes precisam ajudar Everest na sua jornada de volta para casa. A sinopse oficial ainda não foi divulgada."
+            tools:targetApi="jelly_bean" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
