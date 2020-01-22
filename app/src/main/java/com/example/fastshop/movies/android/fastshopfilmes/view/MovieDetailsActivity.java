@@ -38,13 +38,11 @@ public class MovieDetailsActivity extends AppCompatActivity {
         TextView tvDate = findViewById(R.id.date_movie_detail);
         TextView tvDescription = findViewById(R.id.description_movie_detail);
         TextView tvBack = findViewById(R.id.button_back_movie_detail);
-        TextView movieGenre = findViewById(R.id.genre_movie_detail);
 
         Picasso.get().load(IMAGE_URL + movie.getBackdropPath())
                 .placeholder(R.drawable.ic_launcher_background).into(imageMovieDetail);
         tvTitle.setText(movie.getTitle());
         tvRating.setText(movie.voteAverage.toString());
-        movieGenre.setText(String.valueOf(movie.getGenreIds().get(0)));
         tvDate.setText(movie.getReleaseDate());
         tvDescription.setText(movie.getOverview());
         tvBack.setOnClickListener(v -> onBackPressed());
