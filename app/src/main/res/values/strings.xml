@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Fast Shop Filmes</string>
+    <string name="app_name">Filmes Populares</string>
     <string name="back">back</string>
     <string name="textview">TextView</string>
     <string name="image_movie_detail">image_movie_detail</string>
