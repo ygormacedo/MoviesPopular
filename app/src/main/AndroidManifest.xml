@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.fastshop.movies.android.fastshopfilmes">
+    package="com.example.dev.movies.android.moviespopular">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -13,8 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".view.MovieDetailsActivity"/>
-        <activity android:name=".view.MovieActivity">
+        <activity android:name="com.example.dev.movies.android.moviespopular.view.MovieDetailsActivity"/>
+        <activity android:name="com.example.dev.movies.android.moviespopular.view.MovieActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

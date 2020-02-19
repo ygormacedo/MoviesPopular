@@ -13,7 +13,7 @@
         android:background="@color/background">
 
         <ImageView
-            android:id="@+id/imageMovie"
+            android:id="@+id/image_movie_detail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -38,8 +38,8 @@
             android:textStyle="bold"
             android:textColor="@color/text"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imageMovie"
-            app:layout_constraintTop_toTopOf="@+id/imageMovie"
+            app:layout_constraintStart_toEndOf="@+id/image_movie_detail"
+            app:layout_constraintTop_toTopOf="@+id/image_movie_detail"
             tools:text="Move Title Here"
             />
 
