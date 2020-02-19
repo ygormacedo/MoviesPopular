@@ -10,7 +10,7 @@
     <ImageView
         android:id="@+id/image_movie_detail"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="300dp"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,32 +30,39 @@
         android:padding="5dp"
         android:textSize="28sp"
         android:textStyle="bold"
-        android:fontFamily="@font/bebas_regular"
         android:textColor="@color/text"
         app:layout_constraintEnd_toStartOf="@+id/rating_movie_detail"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/image_movie_detail"
-        tools:text="Title Movie"
-        tools:ignore="UnusedAttribute" />
+        tools:text="Title Movie" />
 
     <TextView
         android:id="@+id/date_movie_detail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="5dp"
-        android:fontFamily="@font/bebas_regular"
         android:textColor="@color/text"
         app:layout_constraintEnd_toEndOf="@+id/description_movie_detail"
         app:layout_constraintTop_toBottomOf="@+id/description_movie_detail"
         tools:text="Date is here"
-        tools:ignore="UnusedAttribute" />
+        />
+
+    <TextView
+        android:id="@+id/launch_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/launch_data_text"
+        app:layout_constraintRight_toLeftOf="@id/date_movie_detail"
+        app:layout_constraintTop_toBottomOf="@+id/description_movie_detail"
+        android:padding="5dp"
+        android:textColor="@color/text"
+        />
 
     <TextView
         android:id="@+id/button_back_movie_detail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:drawableLeft="@drawable/ic_undo_yellow_24dp"
-        android:fontFamily="@font/bebas_regular"
         android:padding="5dp"
         android:text="@string/back"
         android:textColor="@color/text"
@@ -65,7 +72,6 @@
         app:layout_constraintStart_toStartOf="@+id/image_movie_detail"
         app:layout_constraintTop_toTopOf="@+id/image_movie_detail"
         android:focusable="true"
-        tools:ignore="UnusedAttribute"
         android:drawableStart="@drawable/ic_undo_yellow_24dp" />
 
 
@@ -77,13 +83,11 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:padding="5dp"
-        android:fontFamily="@font/bebas_regular"
         android:textColor="@android:color/black"
         android:text="@string/textview"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/image_movie_detail"
-        app:layout_constraintTop_toBottomOf="@+id/tittle_movie_detail"
-        tools:targetApi="jelly_bean" />
+        app:layout_constraintTop_toBottomOf="@+id/tittle_movie_detail" />
 
     <TextView
         android:id="@+id/rating_movie_detail"
@@ -93,13 +97,11 @@
         android:layout_marginRight="8dp"
         android:padding="5dp"
         android:drawableRight="@drawable/ic_star_gold_24dp"
-        android:fontFamily="@font/bebas_regular"
         android:textColor="@android:color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tittle_movie_detail"
         tools:text="4.8"
-        android:drawableEnd="@drawable/ic_star_gold_24dp"
-        tools:ignore="UnusedAttribute" />
+        android:drawableEnd="@drawable/ic_star_gold_24dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
